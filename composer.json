@@ -1,4 +1,5 @@
 {
+    "minimum-stability": "dev",
     "name": "horde/mnemo",
     "description": "Notes application",
     "type": "horde-application",
@@ -40,22 +41,29 @@
         "horde/util": "^3 || dev-FRAMEWORK_6_0",
         "ext-gettext": "*"
     },
-    "require-dev": {},
+    "require-dev": {
+        "horde/test": "^3 || dev-FRAMEWORK_6_0"
+    },
     "suggest": {
         "horde/activesync": "^3 || dev-FRAMEWORK_6_0",
         "horde/backup": "^2 || dev-FRAMEWORK_6_0",
         "horde/cli": "^3 || dev-FRAMEWORK_6_0",
         "horde/crypt": "^3 || dev-FRAMEWORK_6_0",
         "horde/db": "^3 || dev-FRAMEWORK_6_0",
-        "horde/pdf": "^3 || dev-FRAMEWORK_6_0",
-        "horde/test": "^3 || dev-FRAMEWORK_6_0"
+        "horde/pdf": "^3 || dev-FRAMEWORK_6_0"
     },
     "autoload": {
         "psr-0": {
             "Mnemo": "lib/"
+        },
+        "psr-4": {
+            "Horde\\Kronolith\\": "src/"
         }
     },
     "autoload-dev": {
+        "psr-0": {
+            "Mnemo": "test/"
+        },
         "psr-4": {
             "Horde\\Mnemo\\Test\\": "test/"
         }
