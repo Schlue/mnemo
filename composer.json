@@ -55,15 +55,9 @@
     "autoload": {
         "psr-0": {
             "Mnemo": "lib/"
-        },
-        "psr-4": {
-            "Horde\\Kronolith\\": "src/"
         }
     },
     "autoload-dev": {
-        "psr-0": {
-            "Mnemo": "test/"
-        },
         "psr-4": {
             "Horde\\Mnemo\\Test\\": "test/"
         }
